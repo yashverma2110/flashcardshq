@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <main>
-      <section className="prose text-center font-mono">
+    <main className="flex flex-col md:flex-row">
+
+      <section id="hero-container" className="md:w-1/2 prose text-center font-mono">
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content text-center">
             <div className="max-w-md">
@@ -13,7 +14,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="mobile-info-carousel" className="p-4 flex justify-center">
+      <section id="mobile-info-carousel" className="p-4 md:w-1/2 h-screen flex items-center justify-center">
         <div className="mockup-phone">
           <div className="camera"></div>
           <div className="display">
