@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -16,6 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="halloween">
+      <Head>
+        <title>Search for flashcards or create your own | Flashcards HQ</title>
+        <meta name="description" content="Discover Flashcards HQ: A Community-Driven Learning Platform with Extensive, User-Created Flashcards. Join, Share, Create your own and Learn Today!" />
+
+        <meta property="og:title" content="Flashcards HQ: Community-Driven Flashcard Learning" />
+        <meta property="og:description" content="Discover Flashcards HQ: A Community-Driven Learning Platform with Extensive, User-Created Flashcards. Join, Share, and Learn Today!" />
+        {/* <meta property="og:url" content="http://www.flashcardshq.com" /> */}
+        {/* <meta property="og:type" content="website" /> */}
+        {/* <meta property="og:image" content="http://www.flashcardshq.com/images/flashcards-hq-og-image.jpg" /> */}
+
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   )
